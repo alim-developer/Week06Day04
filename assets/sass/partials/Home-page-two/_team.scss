@@ -1,0 +1,42 @@
+#team{
+	.container{
+		padding-top: 40px;
+		padding-bottom: 30px;
+
+		.sticker{
+			@include sticker;
+			margin-left: 15px;
+		}
+		h1{
+			margin:0;
+		}
+
+		.thumbnail{
+			margin-top: 55px;
+
+			img{
+				width: 100%;
+			}
+			.caption{
+				transition: all 0.3s ease;
+
+				&:hover {
+					background-color: $colorBlue;
+					color: $colorWhite;
+
+					p{
+						color: $colorBlack;
+
+					}
+
+					i{
+						color: $colorWhite;
+						&:hover{
+							color: lighten($colorGray, 10%);
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+
+
+#team {
+
+	background-color: $backgroundColorBlue;
+	padding: 62px 0;
+
+	.container{
+		h1{
+			padding-left: 15px;
+			font-size: $font-size * 2 + 2;
+			text-transform: $upper;
+			font-weight: 700;
+		}
+		h4{
+			padding-left: 15px;
+			font-size: $font-size + 4;
+			text-transform: $upper;
+			color: #23282f;
+
+		}
+	
+		.thumbnail{
+			margin-top: 10px;
+			padding: 0;
+
+
+			img{
+				width: 100%;
+			}
+
+			.caption{
+				padding: 25px;
+				overflow: hidden;
+				p{
+					font-size: $font-size;
+					text-transform: $upper;
+					word-wrap: break-word;
+					&:nth-child(2){
+						color: #f69b37;
+					}
+				}
+				i{
+					margin-right: 5px;
+					color: #adbdc1;
+					&:hover{
+						color: $colorGray;
+					}
+				}
+			}
+		}
+
+	}
+
+
+
+
+}

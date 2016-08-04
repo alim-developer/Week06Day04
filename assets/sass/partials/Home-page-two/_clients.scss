@@ -1,0 +1,92 @@
+#clients{
+	background-color: #f7941d;
+	.container{
+		padding-top: 95px;
+		padding-bottom: 70px;
+		.sticker{
+			@include sticker;
+			background-color: $colorBlack;
+		}
+
+		h1{
+			@include forFont;
+			margin: 0;
+		}
+
+		.circle{
+			width: 45px;
+			height: 45px;
+			border: 2px solid $colorWhite;
+			border-radius: 50%;
+			margin: 18px auto;
+
+			i{
+				line-height: 45px;
+				color: $colorWhite;
+				font-size: $font-size+4;
+			}
+		}
+
+		
+		.text {
+
+			padding-bottom: 20px;
+			p{	
+				font-size: $font-size +1;
+				font-style: oblique;
+				padding: 10px 0;
+			}
+		}
+		
+		i{
+			font-size: $font-size+4;
+		}
+
+		
+		.quote{
+			height: 85px;
+			position: relative;
+			i{	
+				font-size: $font-size+4;
+				transform: rotate(180deg);
+				position: absolute;
+				bottom: 0;
+			}
+		}
+
+
+		.by{
+			p{
+				font-size: $font-size;
+				text-transform: $upper;
+				margin: 0;
+				
+
+				&:last-child{
+					font-weight: bold;
+					color: $colorBlack;
+				}
+			}
+		}
+
+		.altibucaqli{
+			margin: 25px 0;
+			display: inline-block;
+			width: 	250px;
+
+			img{
+				margin: 0 3px;
+				&:nth-child(4) {
+					margin-top:-5px;
+				}
+				&:nth-child(5) {
+					margin-top:-5px;
+				}
+			}
+			
+		}
+		
+	}
+
+
+}

@@ -1,0 +1,17 @@
+#contact{
+	background-color:$colorDarkGreen;
+	.container{
+		height: 40px;
+		padding: 0 40px;
+	
+		h6{
+			font-size: $font-size ;
+			font-weight: bold;
+			color: #9ba6ac;
+		}
+
+		span{
+			color:#8d8d8d;
+		}
+	}
+}

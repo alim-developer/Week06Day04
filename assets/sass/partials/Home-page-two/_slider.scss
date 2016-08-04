@@ -1,0 +1,140 @@
+#slider{
+
+	
+	.container-fluid{
+		background-color: $backgroundColorGray;
+		background-image: url(../images/06.jpg);
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+		min-height: 750px;
+		margin-top: -20px;
+		
+		.nextPrev{
+			padding-top: 100px;
+			button{
+				background-color:$colorBlue;
+				transition: all 0.4s ease;
+				&:hover{
+					background-color:$colorOrange;
+				}
+			}
+		}
+
+		.contus {
+
+		
+			h1 {
+				font-size: 60px;
+				color: $colorWhite; 
+				font-weight: 700;
+				text-transform: $upper;
+				margin-bottom: 0px;
+				margin: 0;
+				
+
+			}
+			
+			h4{	@extend h1;
+				font-size: $font-size*2-4;
+				margin-bottom: 0px;
+				padding-top:0;
+				font-weight: normal;
+			}
+			
+			button{
+				background-color: $colorBlue;
+				border-radius: 3px;
+				padding: 15px 28px;
+				margin-top:20px;
+				transition: all 0.4s ease;
+
+				&:hover{
+					background-color: $colorOrange;
+				}
+				
+			}
+
+		}
+	.container{
+		padding-top:290px;
+		min-height: 750px;
+		position: relative;
+	}
+		
+
+		.newsLetter{
+			margin: 0 auto;
+			background-color: $colorDarkGreen;
+			width: 95%;
+			min-height: 90px;
+			border-radius: 3px;
+			padding: 10px 0px;
+			margin-bottom: 0px;
+			position: absolute;
+			bottom: 30px;
+			left: 35px;
+			
+			h3{
+				color: $colorWhite;
+				text-transform: $upper;
+				font-size: $font-size+8;
+				display: inline-block;
+				font-weight: bold;
+				margin-right: 40px;
+				position: relative;
+
+				&:after{
+					content:"SIGNUP";
+					background-color: $colorOrange;
+					font-size: 12px;
+					padding: 3px;
+					position:absolute;
+					left: 0;
+					top:-20px;
+				}
+
+				&:before{
+					content:"";
+					height: 35px;
+					width: 2px;
+					border: 2px solid $colorOrange;
+					position: absolute;
+					left: -30;
+				}
+				
+
+			}
+
+			input{
+				width: 27%;
+				height: 40px;
+				border: 1px solid transparent;
+				border-radius: 3px;
+				text-indent: 20px;
+				margin-right: 5px;
+			}
+
+			button{
+				background-color: $colorOrange;
+				border-radius: 3px;
+				width: 21%;
+				font-weight: bold;
+				height: 40px;
+				transition: all 0.2s ease;
+
+				&:hover{
+					box-shadow: 0px 0px 5px $colorBlack inset;
+				}
+
+			}
+
+
+
+	
+	
+		}
+
+		
+	}
+}

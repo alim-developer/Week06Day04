@@ -1,0 +1,33 @@
+.services{
+	
+	background-color: $backgroundColorBlue;
+
+	.sticker{
+		@include sticker;
+
+	}
+
+	h1{
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+
+	.backgroundBlue{
+		width: 66px;
+		height: 66px;
+		border: 1px solid $colorBlack;
+		background-color: $backgroundColorBlue;
+		transition: all 0.3s ease;
+
+		&:hover{
+			background-color: $colorBlue;
+		}
+
+
+		img{
+			padding:15px;
+		}
+	}
+
+}

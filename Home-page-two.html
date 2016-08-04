@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page Two</title>
+		<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/Home-page-two.css">
+	</head>
+	<body>
+		<section id="contact">
+			<div class="container-fluid hidden-xs hidden-sm">
+				<div class="container text-right">
+					<div class="row">
+						<h6>Call Us: <span>9855 445 444</span></h6>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="menu">
+			<div class="container-fluid">
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">
+								<img src="assets/images/Logo.png">
+							</a>
+						</div>
+						
+						<div class="collapse navbar-collapse main " id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="Home-page.html">Home</a></li>
+								<li><a href="About-us.html">About us</a></li>
+								<li><a href="News.html">News</a></li>
+								<li><a href="Portfolio.html">Portfolio</a></li>
+								<li><a href="Servicess.html">Service</a></li>
+								<li><a href="Blog.html">Blog</a></li>
+								<li class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									Pages
+									<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="Home-page-two.html">Home page two</a></li>
+										<li><a href="Blog-post.html">Blog post</a></li>
+										<li><a href="News-details.html">News-details</a></li>
+										<li><a href="Portfolio-two.html">Portfolio two</a></li>
+										<li><a href="Services-two.html">Services-two</a></li>
+									</ul>
+								</li>
+								<li><a href="Contact-us.html">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</section>
+		
+		<section id="slider">
+			<div class="container-fluid dd text-center">
+				<div class="container">
+					<div class="row contus">
+						<h4>Boost up your</h4>
+						<h1>Local Business</h1>
+						<button class="button">Contact Us</button>
+					</div>
+					<div class="row nextPrev">
+						<button onclick="prev()" class="button">Prev</button>
+						<button onclick="next()" class="button">Next</button>
+					</div>
+					
+					<!-- cox alindirmaga calisdim. Responsivliyini duzelde bilmedim -->
+					<div class="newsLetter">
+						<form>
+							<h3>Newsletter  :</h3>
+							<input type="text" name="" placeholder="NAME">
+							<input type="email" name="" placeholder="EMAIL ADDRESS">
+							<button class="button">SUBSCRIBE NOW</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<script type="text/javascript">
+
+		boostArray= ["boost", "Up Boost", "Your Boost", "Boost Number 1", "Boost Up Your"];
+
+		businessArray= ["Home Business", "Office Business", "Global Businness", "Present", "Local Businness"];
+
+		buttonArray = ["Sing UP", "Registered", "Follow Me", "Qeydiyyatdan Kecin!", "Contact Us"];
+
+		i=0;
+
+		sliderImages= ["assets/images/1.jpg", "assets/images/2.jpg", "assets/images/3.jpg", "assets/images/4.jpg", "assets/images/5.jpg"];
+
+
+
+		function prev(){
+			i--;
+			if(i<0){
+				i = boostArray.length-1;
+				i = businessArray.length-1;
+				i = buttonArray.length-1;
+				i = sliderImages.length-1;
+			}
+
+			document.getElementById("slider").getElementsByTagName("h4")[0].innerHTML=boostArray[i];
+
+			document.getElementById("slider").getElementsByTagName("h1")[0].innerHTML=businessArray[i];
+
+			document.getElementById("slider").getElementsByTagName("button")[0].innerHTML=buttonArray[i];
+
+			document.getElementById("slider").getElementsByTagName("div")[0].style= "background-image: url("+ sliderImages[i]+");";
+		}
+
+
+
+
+		function next(){
+			i++;
+
+			if(i == boostArray.length && i == businessArray.length && i == buttonArray.length && i == sliderImages.length){
+				i =0;
+			}
+			document.getElementById("slider").getElementsByTagName("h4")[0].innerHTML=boostArray[i];
+
+			document.getElementById("slider").getElementsByTagName("h1")[0].innerHTML=businessArray[i];
+
+			document.getElementById("slider").getElementsByTagName("button")[0].innerHTML=buttonArray[i];
+
+			document.getElementById("slider").getElementsByTagName("div")[0].style= "background-image: url("+ sliderImages[i]+");";
+
+		}
+			
+
+
+		</script>
+
+
+		<section id="WeAre">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="what">What</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h1>We are?</h1>
+					</div>
+				</div>
+				<div class="clearFix"></div>
+				<div class="row we">
+					<div class="col-md-6 col-sm-12 col-sm-12">
+						<div class="tutorial"></div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-sm-12" style="padding-left: 35px;">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+						
+						<button>Read More</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="features">
+			<div class="services">
+				<div class="container" style="padding-top: 100px; padding-bottom: 90px">
+					<div class="row text-center">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="sticker">Our</div>
+						</div>
+					</div>
+					<div class="row text-center">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<h1>Services</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="row text">
+								<div class="col-md-3 col-sm-3 col-xs-3">
+									<div class="backgroundBlue">
+										<img src="assets/images/features/icon1.png" class="img-responsive">
+									</div>
+								</div>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<h3>Data Entry</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+								</div>
+							</div>
+							<div class="clearFix"></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="row text">
+								<div class="col-md-3 col-sm-3 col-xs-3">
+									<div class="backgroundBlue">
+										<img src="assets/images/features/icon2.png" class="img-responsive">
+									</div>
+								</div>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<h3>Client management</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+								</div>
+							</div>
+							<div class="clearFix"></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="row text">
+								<div class="col-md-3 col-sm-3 col-xs-3">
+									<div class="backgroundBlue">
+										<img src="assets/images/features/icon3.png" class="img-responsive">
+									</div>
+								</div>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<h3>Better Communication</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+								</div>
+							</div>
+							<div class="clearFix"></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="row text">
+								<div class="col-md-3 col-sm-3 col-xs-3">
+									<div class="backgroundBlue">
+										<img src="assets/images/features/icon4.png" class="img-responsive">
+									</div>
+								</div>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<h3>Well analyzing team</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+								</div>
+							</div>
+							<div class="clearFix"></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="row text">
+								<div class="col-md-3 col-sm-3 col-xs-3">
+									<div class="backgroundBlue">
+										<img src="assets/images/features/icon5.png" class="img-responsive">
+									</div>
+								</div>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<h3>24 hour support</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+								</div>
+							</div>
+							<div class="clearFix"></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="row text">
+								<div class="col-md-3 col-sm-3 col-xs-3">
+									<div class="backgroundBlue">
+										<img src="assets/images/features/icon6.png" class="img-responsive">
+									</div>
+								</div>
+								<div class="col-md-9 col-sm-9 col-xs-9">
+									<h3>Keeping business data</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+								</div>
+							</div>
+							<div class="clearFix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="clients">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="sticker">Happy</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h1>Clients</h1>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="circle text-center"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="col-md-2 col-sm-2 col-xs-2 text-right">
+						<i class="fa fa-quote-left" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8 text">
+						
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+						
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2  quote text-left">
+						<i class="fa fa-quote-left" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="row by">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<p>by</p>
+						<p>Sunitha Danial</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="altibucaqli">
+							<img src="assets/images/Home-page-two/altibucaqli.png">
+							<img src="assets/images/Home-page-two/altibucaqli.png">
+							<img src="assets/images/Home-page-two/altibucaqli.png">
+							<img src="assets/images/Home-page-two/altibucaqli.png">
+							<img src="assets/images/Home-page-two/altibucaqli.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			var timer = setInterval(function(){ text() }, 5000);
+			textArray = ["There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.", "Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.", "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because", "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.", "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple"]
+
+			i=0;
+			function text (){
+				i++;
+				if(i == textArray.length){
+					i=0;
+
+				}
+				document.getElementById("clients").getElementsByTagName("p")[0].innerHTML=textArray[i];
+
+			}
+
+
+			
+
+
+		</script>
+
+		<section id="pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="sticker">Our</div>
+						<h1>Pricing</h1>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="thumbnail">
+							<div class="capture">
+								<h4>Personal</h4>
+								<h5>From <span>$100</span> per month</h5>
+								<p>	Business Support
+									Business Analysing
+								24 hour support</p>
+								
+							</div>
+						</div>
+						<button class="button">START NOW</button>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="thumbnail shadow">
+							<div class="capture">
+								<h4>Business</h4>
+								
+								<h5>From <span>$200</span> per month</h5>
+								<p>	Business Support
+									Business Analysing
+									24 hour support
+								</p>
+								
+							</div>
+						</div>
+						<button class="button">START NOW</button>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="thumbnail">
+							<div class="capture">
+								<h4>Gold</h4>
+								
+								<h5>From <span>$250</span> per month</h5>
+								<p>	24 hour support
+									Client management
+								Keeping business</p>
+								
+							</div>
+						</div>
+						<button class="button">START NOW</button>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="thumbnail">
+							<div class="capture">
+								<h4>Ultimate</h4>
+								
+								<h5>From <span>$300</span> per month</h5>
+								
+								<p>	24 hour support
+									Client management
+									Keeping business
+								</p>
+								
+							</div>
+						</div>
+						<button class="button">START NOW</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="team">
+			<div class="container">
+				<div class="row text-center">
+					<div class="sticker">Our</div>
+					<h1>Team</h1>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="assets/images/image2.png">
+							<div class="caption">
+								<p>Mr. Ramgopalavarma</p>
+								<p>Data Specialist</p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="assets/images/image2.png">
+							<div class="caption">
+								<p>Madhavikutti Menon</p>
+								<p>Client Support</p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="assets/images/image2.png">
+							<div class="caption">
+								<p>Dr.Venkittaraman</p>
+								<p>Client Management</p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<img src="assets/images/image2.png">
+							<div class="caption">
+								<p>George Danial</p>
+								<p>Communication</p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="blogPost">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+						<div class="sticker">Our</div>
+						<h1>Blog Post</h1>
+					</div>
+				</div>
+				<div class="row backend text-center">
+					<div>
+						<h1>15</h1>
+						<p>July</p>
+					</div>
+				</div>
+				<div class="row postHead">
+					<div class="col-md-1 hidden-sm hidden-xs"></div>
+					<div class="col-md-5 col-sm-5 col-xs-5">
+						<h4>Blog Heading Here</h4>
+					</div>
+					<div class="col-md-5 col-sm-5 col-xs-5 text-right">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<span>By admin</span>
+						<i class="fa fa-comments-o" aria-hidden="true"></i>
+						<span>20 Comment</span>
+					</div>
+					<div class="col-md-1 hidden-sm hidden-xs"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 hidden-sm hidden-xs"></div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+						<button>Read More</button>
+					</div>
+					<div class="col-md-1 hidden-sm hidden-xs"></div>
+				</div>
+			</div>
+		</section>
+		<section id="footer">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row logos">
+						<div class="col-md-2 col-sm-4 col-xs-12">
+							<img src="assets/images/Logo.png">
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12 menu">
+							<ul>
+								<li><a href="#"><span style="color: white;">Menu</span></a></li>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Portfolio</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12 menu"><ul>
+							
+							<li class="g"><a href="#">Service</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Blog Pages</a></li>
+							<li><a href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul></div>
+						<div class="col-md-3 col-sm-6 col-xs-12 contact">
+							<ul>
+								<li><span class="cont" style="color: white;">Contact</span></li>
+								<li><span style="color: white;">Address :</span> Geethanjali street
+							Second flor : 88569</li>
+							<li><span style="color: white;">Phone :</span> +988 9956 222</li>
+							
+							<li><span style="color: white;">Email :</span> info@business.com</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 newsLetter">
+						<ul>
+							<li style="color: white;">Newsletter</li>
+							<li>Sign up your newsletter</li>
+							
+							<div class="search">
+								
+								<input type="text" name="" placeholder="Email Address">
+								<button type="text" value="">GO</button>
+							</div>
+							<div class="clearFix"></div>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<section id="copyRight">
+			<div class="container">
+				<div class="row text-center">
+					<p>&copy; 2015 Businness LTD. Allright reserved</p>
+				</div>
+			</div>
+			
+		</section>
+		
+	</body>
+</html>

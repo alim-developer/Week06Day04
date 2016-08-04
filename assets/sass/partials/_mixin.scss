@@ -1,0 +1,178 @@
+$colorBlue: #29c2e1;
+$colorOrange: #f69b37;
+$colorBlack: #23282f;
+$colorGray: #93a1a7;
+$colorWhite: #fff;
+$colorDarkGreen: #1f2629;
+$backgroundColorBlue: #e5eef0;
+$backgroundColorGray: #8d8d8d;
+$upper: uppercase;
+$font-size: 14px;
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+
+
+
+.clearFix{
+	clear: both;
+}
+
+
+
+.button{
+	padding: 8px 20px;
+	font-size: 14px + 0.5;
+	border:none;
+	border-radius: 22px;
+	letter-spacing: 2px;
+	color: $colorWhite;
+}
+
+
+.searchButton{
+	width: 262px;
+	height: 42px;
+	background-color: $colorWhite;
+	input{
+		width: 220px;
+		height: 42px;
+		background: transparent;
+		font-size: 12px;
+		text-indent: 15px;
+		border: 1px solid $colorBlue;
+		text-transform: $upper;
+	}
+
+	button{
+		width: 42px;
+		height: 42px;
+		float: right;
+		background-color: $colorBlue;
+		border: none;
+		color: $colorWhite;
+	}
+}
+
+
+
+.ul {
+
+	padding:0;
+
+	li{
+		list-style:none;
+		line-height: 40px;
+		text-transform: $upper;
+		font-weight: bold; 
+		color: $colorGray;
+	}
+
+}
+
+@mixin h1tag{
+	font-size: $font-size+10;
+	text-transform:$upper;
+	font-weight: bold;
+}
+
+
+@mixin input{
+	text-indent: 15px;
+	margin: 8px;
+	border: none;
+	background-color: $backgroundColorBlue;
+	font-size: $font-size -1px;
+}
+
+@mixin textarea {
+	margin: 8px;
+	text-indent: 15px;
+	border: none;
+	background-color: $backgroundColorBlue;
+	font-size: $font-size -1px;
+}
+
+/* Home-page h1 ucun */
+
+@mixin forFont {
+	font-size: $font-size *+2;
+	font-weight: bold;
+	text-transform: $upper;
+	
+}
+
+@mixin forFontMini{
+	text-transform: $upper;
+	font-size: $font-size +4;
+}
+
+
+@mixin button2($backColor){
+	color: $colorWhite;
+	text-transform: $upper;
+	width: 123px;
+	height: 43px;
+	background-color: $backColor;
+	padding: 10px 0px;
+	border: none;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+@mixin sticker{
+
+	min-width: 10px;
+	color: $colorWhite;
+	background-color: $colorOrange;
+	font-size: 12px;
+	padding: 3px 5px;
+	display: inline;
+	text-transform: $upper;
+
+	
+}
+
+
+@mixin newsInBorders {
+
+	h1{
+				font-family: 'Raleway', sans-serif;
+				font-size: 48px;
+				font-weight: normal;
+			}
+
+			h3{
+				font-family: 'Raleway', sans-serif;
+				font-size: $font-size +2;
+
+			}
+
+			h4{
+				
+				margin-top: 40px;
+				margin-bottom: 20px;
+				font-size: $font-size +4;
+			}
+
+			p{
+				padding: 0 50px;
+				font-size: $font-size;
+				color: darken($colorGray, 30%);
+			}
+
+			button{
+				@extend .button;
+				margin: 10px;
+				margin-top: 25px;
+				width: 139px;
+				height: 42px;
+				background-color: $colorBlue;
+				transition: all 0.4s ease;
+				&:hover{
+					background-color: $colorOrange;
+				}
+			}
+
+}
